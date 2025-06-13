@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatBot</title>
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css">
+    <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+    <link href='https://cdn.boxicons.com/fonts/brands/boxicons-brands.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <h2 class="media-header">ChatBot</h2>
+        <button class="reset_button" id="deleteButton">
+            <i class='bx  bxs-trash' style='color:#000000'></i>
+        </button>
+    </nav>
+
+    <div class="container">
+        <header class="app-header">
+            <h1 class="heading">Hello, there !</h1>
+            <h2 class="sub-heading">How Can I help U ?</h2>
+    </div>
+    <section class="chats"></section>
+    <div class="fade-out-overlay"></div>
+    <section class="prompt">
+        <form action="#" class="prompt__form" novalidate>
+            <div class="prompt__input-wrapper">
+                <input type="text" placeholder="Enter ur prompt here !" class="prompt__form-input" required>
+                <button class="prompt__form-button" id="sendButton"><i class='bxr  bxs-send-alt'
+                        style='color:#000000'></i>
+                </button>
+
+
+
+            </div>
+        </form>
+
+        <p class="prompt__disclaim">
+            This Chatbot is based on Gemini AI Engine 2.5, generated responses are based on it.
+        </p>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
